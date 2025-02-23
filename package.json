@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "preinstall": "rm -f node_modules/.bin/vitest",
+    "preinstall": "rm -f node_modules/.bin/vitest node_modules/.bin/concurrently",
     "start": "cd server && npm run start",
     "seed": "cd server && npm run seed",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
